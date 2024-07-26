@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+/* 3. 사용자 정의 폰트(@font-face 규칙 사용) */
+@font-face {
+    font-family: abc;
+    src: url('../media/SongMyung.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: normal 0.8em sans-serif;
+    background-color: rgb(213, 223, 226);
+    color: rgb(93, 93, 93);
+}
+
+p {
+    padding: 0 0 18px 0;
+    line-height: 1.7em;
+}
+
+img {
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: normal 165% arial, sans-serif;
+    color: rgb(45, 184, 205);
+    margin: 0 0 14px 0;
+}
+
+h2 {
+    color: rgb(176, 0, 0);
+}
+
+h4, h5, h6 {
+    font: normal 120% arial, sans-serif;
+    color: rgb(176, 0, 0);
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+h5, h6 {
+    font: italic 95% arial, sans-serif;
+    color: rgb(0, 128, 255);
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 2px 0 0 17px;
+}
+
+ul li {
+    list-style-type: circle;
+    margin: 0 0 3px 0;
+    padding: 0 0 4px 5px;
+}
+
+#main, #logo, nav, #site_content, footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: transparent;
+    height: 170px;
+}
+
+#logo {
+    width: 860px;
+    height: 134px;
+
+    position: relative;
+}
+
+#logo h1 {
+    font-size: 300%;
+    padding: 24px 0 0 0;
+    margin: 0;
+    color: white;
+}
+
+#logo h1, #logo h1 a, #logo h1 a:hover {
+    padding: 22px 0 0 0;
+    color: white;
+    text-decoration: none;
+}
+
+#logo h1 a:hover{
+    color: #888;
+}
+
+#logo h2 {
+    font-size: 120%;
+    padding: 4px 0 0 0;
+    color: rgb(138, 139, 126);
+}
+
+nav {
+    width: 900px;
+    height: 24px;
+}
+
+/**************************** 메뉴 부분 ****************************/
+
+#menu {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#menu li {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 2px 0 0;
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    font-size: 100%;
+    height: 20px;
+    padding: 6px 20px 5px 20px;
+    text-align: center;
+    margin: 5px 2px 0 0;
+    background-color: white;
+    color: rgb(59, 0, 0);
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #d4d4d4;
+    color: rgb(14, 0, 0)
+}
+
+#menu .selected a, #menu .selected a:hover {
+    background-color: #b9b9b9;
+}
+
+/**************************** 본문 부분 ****************************/
+
+#site_content {
+    width: 858px;
+    overflow: hidden;
+    padding: 10px 20px 20px 20px;
+    background: #eeecec url("../images/back.png") repeat-y;
+    border: 15px solid white;
+}
+
+aside {
+    width: 190px;
+    float: right;
+    padding: 0 15px 20px 15px;
+}
+
+aside p:nth-child(1) {
+    text-align: justify;
+}
+
+aside ul {
+    width: 178px;
+    padding: 4px 0 0 0;
+    margin: 4px 0 30px 0;
+}
+
+aside ul li {
+    list-style-type: none;
+    padding: 0 0 7px 0;
+}
+
+aside ul li a, aside ul li a:hover {
+    display: block;
+    padding: 2.5px 0 2.5px 25px;
+    text-decoration: none;
+    background: url("../images/icon.png") no-repeat;
+}
+
+aside ul li a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+section {
+    width: 613px;
+    text-align: left;
+    padding: 0;
+}
+
+section article:nth-child(1) {
+    text-align: justify;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-family: Ubuntu;
+}
+
+table {
+    width: 100%;
+    margin: 7px 0 14px 0;   
+}
+
+table tr th, table tr td{
+    background-color: rgb(188, 142, 133);
+    color: white;
+    text-align: center;
+    padding: 7px 5px;
+}
+
+table tr td {
+    background-color: #e5e5db;
+    color: #444;
+}
+
+table caption {
+    font-size: 16px;
+    color: #4f0000;
+    margin: 5px;
+}
+
+.webfont2 {
+    font-family: "Nanum Pen Script";
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+.webfont3 {
+    font-family: abc;
+    font-size: 12pt;
+}
+
+/* 중간 상태 정의(중간 상태 이름: slidein) */
+@keyframes slidein {
+    from { /* 시작 상태 */
+        width: 50%; /* 부모 태그 너비의 50% 설정 */
+        margin-left: 50%; /* 왼쪽 바깥 여백(부모 태그 너비의 50%) 사용 */
+    }
+    to { /* 끝 상태 */
+        width: 50%;
+        margin-left: 0%;
+        
+    }
+}
+
+#art1 h3 {
+    animation-name: slidein; /* 중간상태 이름 설정 */
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+#tr1 {
+    transform: rotate(90deg); /* 90도 회전(시계방향) */
+}
+
+#tr2 {
+    transform: skewx(30deg); /* 30도 비틀기(x축) */
+}
+
+#tr3 {
+    transform: scale(0.5); /* 확대 축소 */
+    transition: 2s;
+}
+
+#tr3:hover {
+    transform: scale(1.5);
+    transform: rotate(180deg);
+    opacity: 0.5; /* 투명도 설정 (0.0은 투명, 1.0은 불투명 */
+}
+
+#box {
+    width: 30px;
+    height: 20px;
+    border: 1px solid #888;
+    background-color: yellowgreen;
+    transition: width 2s, height 1s; /* 속성 변화시 속도(초) 설정, 기본 초만 설정할 경우 all을 입력(생략 가능) */
+}
+
+#box:hover {
+    width: 100%;
+    height: 60px;
+    background-color: rebeccapurple;
+}
+
+@keyframes multi {
+    0% {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+    }
+    25% {
+        background-color: yellow;
+        left: 100px;
+        top: 10px;
+    }
+    50% {
+        background-color: green;
+        left: 100px;
+        top: 100px;
+    }
+    75% {
+        background-color: blue;
+        left: 10px;
+        top: 100px;
+    }
+    100% {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+#box2 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #888;
+    background-color: red;
+
+    position: relative;
+    
+    left: 10px;
+    top: 10px;
+
+    animation-name: multi;
+    animation-duration: 3s;
+}
+
+/**************************** 아래 부분 ****************************/
+
+footer {
+    width: 90%;
+    text-align: center;
+    font-size: 90%;
+    font-family: sans-serif;
+    padding: 20px 0 5px 0;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+footer p a, footer p a:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
